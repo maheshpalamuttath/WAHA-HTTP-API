@@ -1,6 +1,6 @@
 # Setting up Apache Reverse Proxy for WAHA Instance
 
-This guide explains how to configure Apache as a reverse proxy to make your WAHA (WhatsApp Helper Automation) instance accessible via a domain name, and optionally secure it with SSL using Let's Encrypt.
+This guide explains how to configure Apache as a reverse proxy to make your WAHA (WhatsApp HTTP API) instance accessible via a domain name, and optionally secure it with SSL using Let's Encrypt.
 
 ## Prerequisites
 
