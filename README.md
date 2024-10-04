@@ -2,7 +2,7 @@
 After Docker is installed, navigate to the directory containing your docker-compose.yml file the run
 
 ```bash
-docker compose up -d
+sudo docker compose up -d
 ```
 
 ## Setting up Apache Reverse Proxy for WAHA Instance
