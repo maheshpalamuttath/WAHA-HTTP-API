@@ -24,7 +24,7 @@ sudo systemctl reload apache2
 sudo systemctl restart apache2
 ```
 
-## Step 2: Configure Apache as Reverse Proxy
+## Step 2: Configure Apache as Reverse Proxy for WAHA
 
 Edit Apache configuration file:
 
@@ -36,13 +36,37 @@ Add the following configuration removing the existing one:
 
 ```apache
 <VirtualHost *:80>
-    ServerName your-domain.com
+    ServerName whats-api.opensio.co.in
 
     ProxyPreserveHost On
 
     # ProxyPass for backend WAHA server
     ProxyPass / http://127.0.1.1:3000/
     ProxyPassReverse / http://127.0.1.1:3000/
+</VirtualHost>
+```
+
+Save and exit the editor.
+
+## Step 2: Configure Apache as Reverse Proxy for N8N
+
+Edit Apache configuration file:
+
+```bash
+sudo vim /etc/apache2/sites-available/n8n.conf
+```
+
+Add the following configuration removing the existing one:
+
+```apache
+<VirtualHost *:80>
+    ServerName n8n.opensio.co.in
+
+    ProxyPreserveHost On
+
+    # ProxyPass for backend N8N server
+    ProxyPass / http://127.0.1.1:5678/
+    ProxyPassReverse / http://127.0.1.1:5678/
 </VirtualHost>
 ```
 
@@ -68,7 +92,8 @@ sudo apt-get install -y certbot python3-certbot-apache
 Run Certbot to obtain a free SSL certificate from Let's Encrypt:
 
 ```bash
-sudo certbot --apache -d your-domain.com
+sudo certbot --apache -d whats-api.opensio.co.in
+sudo certbot --apache -d n8n.opensio.co.in
 ```
 
 Follow the prompts to configure SSL settings and redirect HTTP traffic to HTTPS if desired.
