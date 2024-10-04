@@ -1,4 +1,11 @@
-# Setting up Apache Reverse Proxy for WAHA Instance
+## Set Up Docker Compose Services
+After Docker is installed, navigate to the directory containing your docker-compose.yml file the run
+
+```bash
+docker compose up -d
+```
+
+## Setting up Apache Reverse Proxy for WAHA Instance
 
 This guide explains how to configure Apache as a reverse proxy to make your WAHA (WhatsApp HTTP API) instance accessible via a domain name, and optionally secure it with SSL using Let's Encrypt.
 
