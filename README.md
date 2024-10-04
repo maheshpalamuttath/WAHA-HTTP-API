@@ -4,7 +4,7 @@ This guide explains how to configure Apache as a reverse proxy to make your WAHA
 
 ## Prerequisites
 
-- Ubuntu server with sudo privileges
+- Debian/Ubuntu server with sudo privileges
 - WAHA instance running on port 3000 locally (adjust as per your setup)
 
 ## Step 1: Install Apache and Required Modules
