@@ -1,0 +1,16 @@
+services:
+  waha_plus:
+    image: devlikeapro/waha-plus
+    container_name: waha_plus
+    restart: always
+    ports:
+      - '3000:3000'
+    environment:
+      - WAHA_DASHBOARD_USERNAME=maheshpalamuttath
+      - WAHA_DASHBOARD_PASSWORD=Msh94@664972
+      - WHATSAPP_SWAGGER_USERNAME=maheshpalamuttath
+      - WHATSAPP_SWAGGER_PASSWORD=Msh94@4972
+      - WHATSAPP_API_KEY=iTD95okGZc4TXN6uktVqQZ2ytKBnWNKMdk2Xi7UGg7374
+      - WHATSAPP_DEFAULT_ENGINE=NOWEB
+    volumes:
+      - ./.sessions:/app/.sessions
