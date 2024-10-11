@@ -1,5 +1,5 @@
 ## Set Up Docker Compose Services
-After Docker is installed, navigate to the directory containing your docker-compose.yml file the run
+After Docker is installed, navigate to the directory containing your docker-compose.yml file the run ==for plus==
 
 ```bash
 sudo docker login -u devlikeapro -p dckr_pat_5e3AH5dtylfP5Bex5TJS8MD_0Os
