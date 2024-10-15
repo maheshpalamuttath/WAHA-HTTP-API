@@ -4,7 +4,7 @@ After Docker is installed, navigate to the directory containing your docker-comp
 ```bash
 sudo docker login -u devlikeapro -p dckr_pat_5e3AH5dtylfP5Bex5TJS8MD_0Os
 
-sudo docker-compose.yaml
+sudo docker compose up -d
 
 sudo docker logout
 ```
