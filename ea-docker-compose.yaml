@@ -1,3 +1,4 @@
+version: '3.1'
 services:
   easyappointments:
     image: 'easyappointments:1.4.3'
