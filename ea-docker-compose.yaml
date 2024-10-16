@@ -1,4 +1,5 @@
 services:
+
   easyappointments:
     image: 'easyappointments:1.4.3'
     environment:
@@ -10,10 +11,11 @@ services:
       - DB_PASSWORD=secret
     ports:
       - '8001:80'
-  mysql:
-    image: 'mysql:8.0'
+      
+   mariadb:
+    image: 'mariadb:latest'  
     volumes:
-      - './docker/mysql:/var/lib/mysql'
+      - './docker/mariadb:/var/lib/mysql'
     environment:
-      - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_DATABASE=easyappointments
+      - MARIADB_ROOT_PASSWORD=secret 
+      - MARIADB_DATABASE=easyappointments
