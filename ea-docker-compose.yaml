@@ -1,5 +1,4 @@
 services:
-
   easyappointments:
     image: 'easyappointments:1.4.3'
     environment:
