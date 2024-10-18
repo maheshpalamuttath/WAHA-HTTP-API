@@ -1,0 +1,70 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- My Apps:
+    - WordPress:
+        href: https://maheshpalamuttath.info/wp-admin
+        description: Personal Website
+        icon: ../png/wordpress.png
+    - Blogger:
+        href: https://www.blogger.com/
+        description: Blogging
+        icon: ../png/blogger.png
+    - InvoicePlane:
+        href: https://crm.maheshpalamuttath.info/
+        description: Invoicing and Billing Software
+        icon: ../png/invoiceplane.png
+    - EasyAppointments:
+        href: https://slot.maheshpalamuttath.info/
+        description: Online Appointment Scheduling
+        icon: ../png/easyappointments.png
+    - Attendance Management System:
+        href: https://ams.maheshpalamuttath.info/
+        description: Attendance Tracking System
+        icon: ../png/attendance.png
+
+- Services:
+    - WhatsApp Business API:
+        href: https://whats-api.opensio.co.in
+        description: WhatsApp HTTP API
+        icon: ../png/whatsapp.png
+    - N8N:
+        href: https://n8n.opensio.co.in
+        description: Workflow Automation
+        icon: ../png/n8n.png
+    - Nginx Proxy Manager:
+        href: https://npm.opensio.co.in
+        description: NginX Proxy Manager
+        icon: ../png/nginx-proxy-manager.png
+    - Rust Desk:
+        href: https://script-rustdesk.opensio.co.in
+        description: RustDesk Remote Client Script
+        icon: ../png/rustdesk.png
+
+- Cloud and DNS Management:
+    - Vultr:
+        href: https://www.vultr.com/
+        description: Cloud Infrastructure Services
+        icon: ../png/vultr.png
+    - Cloudflare:
+        href: https://www.cloudflare.com/
+        description: CDN and DNS Management
+        icon: ../png/cloudflare.png
+    - GoDaddy:
+        href: https://www.godaddy.com/
+        description: Domain Registration and Hosting
+        icon: ../png/godaddy.png
+
+- Cloud Storage Services:
+    - Google Drive:
+        href: https://www.google.com/drive/
+        description: Cloud Storage and File Sharing
+        icon: ../png/google-drive.png
+    - Dropbox:
+        href: https://www.dropbox.com/
+        description: File Hosting and Synchronization
+        icon: ../png/dropbox.png
+    - MEGA:
+        href: https://mega.nz/
+        description: Cloud Storage with End-to-End Encryption
+        icon: ../png/mega.png
